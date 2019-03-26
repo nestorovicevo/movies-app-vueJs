@@ -26,18 +26,6 @@ export default {
      .then((response) => {
        this.movie = response.data
      })
- },
-
-//  async get(){
-//      console.log('show me a movie')
-//    try{
-//      const {data} = await movies.get(this.$route.params.id );
-//      this.movie = this.movies.filter(c => c !== movie)
-//      this.movie = data;
-//      console.log(data)
-//    }catch(error){
-//      console.log(error);
-//    }
-//  },
+ }
 }
 </script>

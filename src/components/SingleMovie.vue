@@ -6,7 +6,8 @@
      <div class="card-body">
        <h5 class="card-title">{{ movie.title }}</h5>
         <h5 class="card-title">{{ movie.director }}</h5>
-          <p class="card-text">Image: {{ movie.imageUrl }}</p>
+           <img :src="movie.imageUrl" width="100" height="100" :alt="movie.title">
+             {{movie.imageUrl}}
            <p class="card-text">releaseDate: {{ movie.releaseDate }}</p>
            <p class="card-text">Genere: {{ movie.genre }}</p>
            <p class="card-text">Duration: {{ movie.duration }}</p>
