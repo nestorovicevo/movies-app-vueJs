@@ -13,14 +13,14 @@
         <li class="list-group-item">Genre: {{ movie.genre }}</li>
       </ul>
       <div class="card-body">
-        
+        <router-link  :to="{ name: 'single-movie', params: { id: movie.id } }"  class="btn btn-link">View Movie Details</router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import capitalize from 'lodash/capitalize'
+
 export default {
     name: 'MoviesList',
 

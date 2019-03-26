@@ -11,7 +11,8 @@ class MoviesService {
     }
 
     get(id){
-        return httpService.get('/movies/{id}')
+        console.log(`/movies/${id}`)
+        return httpService.get(`/movies/${id}`)
     }
 
 }
